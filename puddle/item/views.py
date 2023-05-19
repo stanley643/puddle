@@ -46,9 +46,9 @@ def new(request):
         else:
             form = NewItemForm()
     return render(request, 'item/form.html', {
-        'title': 'New item',
-        'form': form
-        #'title': 'New item'
+        #'title': 'New item',
+        'form': form,
+        'title': 'New item'
     })
 
 @login_required
